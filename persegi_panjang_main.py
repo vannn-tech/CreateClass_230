@@ -1,7 +1,7 @@
 from persegi_panjang import PersegiPanjang
 
 
-def baca_ukuran(nama_ukuran):
+def baca_ukuran(nama_ukuran: str) -> int:
     while True:
         try:
             return int(input(f"Masukkan {nama_ukuran} (cm): "))
@@ -9,7 +9,7 @@ def baca_ukuran(nama_ukuran):
             print("Inputnya harus angka bulat, coba lagi.\n")
 
 
-def main():
+def main() -> None:
     while True:
         try:
             panjang = baca_ukuran("panjang")
