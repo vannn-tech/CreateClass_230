@@ -18,9 +18,10 @@ def main() -> None:
     lebar = baca_ukuran("lebar")
     persegi_panjang = PersegiPanjang(panjang, lebar)
 
+    print("Hasil perhitungan:")
     print(persegi_panjang)
-    print("Keliling:", persegi_panjang.keliling(), "cm")
-    print("Luas:", persegi_panjang.luas(), "cm2")
+    print(f"Keliling: {persegi_panjang.keliling()} cm")
+    print(f"Luas: {persegi_panjang.luas()} cm2")
 
 
 if __name__ == "__main__":
