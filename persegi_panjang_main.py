@@ -15,3 +15,7 @@ def main():
     print(p1)
     print("Keliling:", p1.keliling(), "cm")
     print("Luas:", p1.luas(), "cm2")
+
+
+if __name__ == "__main__":
+    main()
