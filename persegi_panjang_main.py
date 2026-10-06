@@ -21,7 +21,7 @@ def main() -> None:
     print("Hasil perhitungan:")
     print(persegi_panjang)
     print(f"Keliling: {persegi_panjang.keliling()} cm")
-    print(f"Luas: {persegi_panjang.luas()} cm2")
+    print(f"Luas: {persegi_panjang.luas()} cm²")
 
 
 if __name__ == "__main__":
