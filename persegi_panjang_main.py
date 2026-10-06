@@ -14,16 +14,9 @@ def baca_ukuran(nama_ukuran: str) -> int:
 
 
 def main() -> None:
-    while True:
-        try:
-            panjang = baca_ukuran("panjang")
-            lebar = baca_ukuran("lebar")
-
-            p1 = PersegiPanjang(panjang, lebar)
-            break
-        except ValueError as e:
-            print("Error:", e)
-            print("Silakan masukkan ulang.\n")
+    panjang = baca_ukuran("panjang")
+    lebar = baca_ukuran("lebar")
+    p1 = PersegiPanjang(panjang, lebar)
 
     print(p1)
     print("Keliling:", p1.keliling(), "cm")
