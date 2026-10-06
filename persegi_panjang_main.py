@@ -4,7 +4,11 @@ from persegi_panjang import PersegiPanjang
 def baca_ukuran(nama_ukuran: str) -> int:
     while True:
         try:
-            return int(input(f"Masukkan {nama_ukuran} (cm): "))
+            ukuran = int(input(f"Masukkan {nama_ukuran} (cm): "))
+            if ukuran <= 0:
+                print("Ukurannya harus lebih dari 0, coba lagi.\n")
+                continue
+            return ukuran
         except ValueError:
             print("Inputnya harus angka bulat, coba lagi.\n")
 
