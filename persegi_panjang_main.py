@@ -16,11 +16,11 @@ def baca_ukuran(nama_ukuran: str) -> int:
 def main() -> None:
     panjang = baca_ukuran("panjang")
     lebar = baca_ukuran("lebar")
-    p1 = PersegiPanjang(panjang, lebar)
+    persegi_panjang = PersegiPanjang(panjang, lebar)
 
-    print(p1)
-    print("Keliling:", p1.keliling(), "cm")
-    print("Luas:", p1.luas(), "cm2")
+    print(persegi_panjang)
+    print("Keliling:", persegi_panjang.keliling(), "cm")
+    print("Luas:", persegi_panjang.luas(), "cm2")
 
 
 if __name__ == "__main__":
